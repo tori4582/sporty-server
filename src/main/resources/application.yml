@@ -1,0 +1,15 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+
+infrastructure:
+  services:
+    firebase:
+      url: http://mobile-project-7e08a.firebase.io/
+      credentials-file-name: /static/credentials.json
+
+mappings:
+  firebase:
+    collections:
+      account: account
