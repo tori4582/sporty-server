@@ -3,11 +3,24 @@ spring:
     ansi:
       enabled: always
 
+security:
+  basic:
+    enable: false
+
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+
 infrastructure:
   services:
     firebase:
       url: http://mobile-project-7e08a.firebase.io/
       credentials-file-name: /static/credentials.json
+    firebase-auth:
+      url: http://mobile-project-7e08a.firebaseapp.com
+
 
 mappings:
   firebase:
